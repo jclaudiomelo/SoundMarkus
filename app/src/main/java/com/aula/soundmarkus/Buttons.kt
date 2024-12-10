@@ -18,6 +18,9 @@ class Buttons(private val view: View, private val context: Context) {
     val btn9: Button = view.findViewById(R.id.button9)
     val btn10: Button = view.findViewById(R.id.button10)
     val btn11: Button = view.findViewById(R.id.button11)
+    val btn12: Button = view.findViewById(R.id.button12)
+    val btn13: Button = view.findViewById(R.id.button13)
+//    val btn14: Button = view.findViewById(R.id.button14)
 
     fun playSound() {
 
@@ -37,6 +40,36 @@ class Buttons(private val view: View, private val context: Context) {
         btn5.setOnClickListener {
             MediaPlayer.create(context, R.raw.sarue).start()
         }
+        btn6.setOnClickListener {
+            MediaPlayer.create(context, R.raw.simasturbo).start()
+        }
+        btn7.setOnClickListener {
+            MediaPlayer.create(context, R.raw.alahu_tocaemmim_arkao).start()
+        }
+        btn8.setOnClickListener {
+            MediaPlayer.create(context, R.raw.bozo_toca_em_mim_markao).start()
+        }
+        btn9.setOnClickListener {
+            MediaPlayer.create(context, R.raw.lula_markao).start()
+        }
+        btn10.setOnClickListener {
+            MediaPlayer.create(context, R.raw.bate_na_cara_markao).start()
+        }
+        btn11.setOnClickListener {
+            MediaPlayer.create(context, R.raw.oferencedo).start()
+        }
+        btn12.setOnClickListener {
+            MediaPlayer.create(context, R.raw.bateforteraviens).start()
+        }
+        btn13.setOnClickListener {
+            MediaPlayer.create(context, R.raw.taomuitogai).start()
+        }
+//        btn14.setOnClickListener {
+//            MediaPlayer.create(context, R.raw.tocaemmim).start()
+//        }
+
+
+
 
 
 

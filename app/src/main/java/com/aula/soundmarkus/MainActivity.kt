@@ -1,6 +1,7 @@
 package com.aula.soundmarkus
 
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -19,6 +20,12 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        val sair: Button = findViewById(R.id.sair)
+        sair.setOnClickListener {
+            finish()
+            System.exit(0)
+        }
         Buttons(findViewById(android.R.id.content), this).playSound()
     }
+
 }
